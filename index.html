@@ -1,15 +1,89 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+<title>Barbie</title>
+<style>
+header{
+background-color: rgb(241, 139, 182);
+color: rgb(255, 0, 98);
+text-align: center;
+max-width: 800px;
+margin:0 auto;
+padding: 16px;
+}
+main{
+background-color: rgb(247, 169, 195);
+color:rgb(155, 4, 62);
+max-width: 800px;
+margin: 0 auto;
+padding: 16px;
+}
+article{
+ display: flex;
+}
+img{
+width: 80px;
+height: 80px;
+}
+.artigo-autor{
+font-weight: bold;
+}
+</style>
 </head>
 <body>
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+<header>
+  <h1>Meu blog sobre a Barbie</h1>
+  <p>vou compartilhar curiosidades sobre a famosa personagem Barbie</p>
+           <button>👍🏻<span>0</span></button>
+</header>
+<main>
+  <article>
+      <img src="https://pt.wikipedia.org/wiki/Barbie" alt="Barbie">
+      <div>
+          <h2>Rosa</h2>
+          <p class="artigo-autor">Por: Maria Mendes</p>
+          <p>Rosa é considerada a cor que define a Barbie, como é motrado em todos os filmes e series.
+           <button>👍🏻<span>0</span></button>
+           <button>💗<span>0</span></button>
+           <button>💋<span>0</span></button>
+          </p>
+      </div>
+  </article>
+  <article>
+      <img src="https://www.pngwing.com/pt/free-png-bnwdj" alt="Barbie">
+      <div>
+          <h2>Cor de cabelo</h2>
+          <p class="artigo-autor">Por: Maria Mendes</p>
+          <p>Na maioria das vezes a barbie é vista com cabelo loiro que é sua versão mais conhecida, sendo uma caracteristica marcamte da personage, mas há excessoes.
+ <button>👍🏻<span>0</span></button>
+           <button>💗<span>0</span></button>
+           <button>💋<span>0</span></button>
+          </p>
+      </div>
+  </article>
+</main>
 </body>
+<script>
+ const botoes=document.querySelectorAll("button");
+ botoes.forEach (function (button) {
+  let curtiu= false
+botao.addEventListener("click", botaoClicado);
+function botaoClicado(){
+  console.log("fui clicado");
+  let texto = botao.querySelectorAll("span");
+  if (curtiu === false){
+texto.textContent++;
+curtiu = true;
+  } else {
+texto.textContent--;
+curtiu = false;
+if (curtiu = false)
+  }
+}
+ })
+</script>
 </html>
 
 
